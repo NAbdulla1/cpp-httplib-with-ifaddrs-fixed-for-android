@@ -13,5 +13,6 @@ set(CPP_HTTP_LIB ${PROJECT_NAME})
 add_library(${CPP_HTTP_LIB} SHARED httplib.cc)
 target_include_directories(${CPP_HTTP_LIB} PUBLIC ./include)
 
+# if minimum Sdk version is >= 24 then next two lines are unnecessary
 add_subdirectory(android-ifaddrs)
 target_link_libraries(${CPP_HTTP_LIB} ifaddrslib)
