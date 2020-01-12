@@ -11,4 +11,4 @@ include(ExternalProject)
 set(IF_ADDR_LIB ${PROJECT_NAME})
 
 add_library(${IF_ADDR_LIB} SHARED ifaddrs.c)
-target_include_directories(${IF_ADDR_LIB} PUBLIC ${CMAKE_SOURCE_DIR}/include)
+target_include_directories(${IF_ADDR_LIB} PUBLIC ./include)
